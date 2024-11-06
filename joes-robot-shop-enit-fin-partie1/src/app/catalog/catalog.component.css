@@ -1,0 +1,54 @@
+.bold {
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-image: url('/assets/image/pattern.png');
+
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 200px;
+  
+}
+
+.filters button {
+  width: 10px;
+  
+}
+
+.filters a.button {
+  background-color: #aebacf; /* Couleur de fond (vert) */
+  color: white; /* Couleur du texte (blanc) */
+  padding: 10px 15px; /* Espacement intérieur */
+  text-decoration: none; /* Supprimer le soulignement */
+  border-radius: 5px; /* Coins arrondis */
+  transition: background-color 0.3s; /* Transition pour l'effet de survol */
+}
+
+.filters a.button:hover {
+  background-color: #cddce9; /* Couleur de fond au survol */
+}
+
+
+
+.products {
+  margin: 0 100px;
+  border-top: 2px solid #999;
+}
+
+.product-item {
+  border-bottom: 2px solid #999;
+}
+.footer {
+  background-color:#d7e1e4; /* Couleur de fond */
+  padding: 20px; /* Espacement intérieur */
+  text-align: center; /* Centrer le texte */
+  font-size: 14px; /* Taille de police */
+  border-top: 1px solid #ddd; /* Ligne de séparation en haut */
+  margin-top: 20px; /* Espacement supérieur */
+}

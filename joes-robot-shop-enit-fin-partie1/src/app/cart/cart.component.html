@@ -1,0 +1,37 @@
+<div class="container">
+    <h1 class="header">Votre Commande</h1>
+  
+    <div class="empty-cart" *ngIf="cartItems.length === 0">
+      Vous n'avez rien commandé !
+    </div>
+    <ul class="cart" *ngIf="cartItems.length > 0">
+      <li class="cart-item" *ngFor="let product of cartItems">
+        <div class="product">
+          <div class="product-details">
+            <img [src]="getImageUrl(product)" [alt]="product.name" />
+            <div class="product-info">
+              <div class="name">{{ product.name }}</div>
+              <div class="description">{{ product.description }}</div>
+              <div class="category">Part Type: {{ product.category }}</div>
+            </div>
+          </div>
+          <div class="price">
+            <div [ngClass]="{ strikethrough: product.discount > 0 }">
+              {{ product.price | currency : 'TND' }}
+            </div>
+            <div *ngIf="product.discount > 0" class="discount">
+              {{ product.price * (1 - product.discount) | currency : 'TND' }}
+            </div>
+            <button (click)="removeFromCart(product)">Supprimer</button>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="total">Total: {{ cartTotal | currency }}</div>
+    
+  </div>
+  <footer class="footer">
+    <p>Notre adresse est :</p>
+    <p>Cake's Shop - Rue de la pâtisserie 216, Tunis, Tunisie</p>
+    <p>2024 ENIT - All rights reserved</p>
+  </footer>

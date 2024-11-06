@@ -1,0 +1,27 @@
+.help-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #333;
+}
+
+.faq h4 {
+    margin-top: 15px;
+    color: #b887b9;
+}
+
+.faq p {
+    margin-bottom: 10px;
+}
+.footer {
+    background-color: #d7e1e4; /* Couleur de fond */
+    padding: 20px; /* Espacement intérieur */
+    text-align: center; /* Centrer le texte */
+    font-size: 14px; /* Taille de police */
+    border-top: 1px solid #ddd; /* Ligne de séparation en haut */
+    margin-top: 20px; /* Espacement supérieur */
+  }

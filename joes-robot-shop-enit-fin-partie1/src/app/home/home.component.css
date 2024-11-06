@@ -1,0 +1,195 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-image: url('/assets/image/pattern.png');
+  }
+  
+  .hero {
+    background-image: url("/assets/image/cakes.jpg");
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  
+  .promoted {
+    display: flex;
+    justify-content: center; /* Centre horizontalement les éléments */
+    align-items: center; /* Centre verticalement les éléments */
+    margin: 25px;
+    border-top: 2px solid #888;
+    border-bottom: 2px solid #888;
+    padding: 10px 50px; /* Ajustez le padding à gauche et à droite */
+}
+
+.promo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+    text-align: center; /* Centre le texte à l'intérieur des éléments */
+    margin: 40px 20px; /* Ajustez les marges selon vos besoins */
+}
+
+.promo-main-text,
+.promo-sub-text {
+    text-align: center; /* Centre le texte */
+    margin: 0; /* Supprimez les marges pour un alignement parfait */
+}
+
+  
+  .promoted img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .promo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+    text-align: center; /* Centre le texte à l'intérieur des éléments */
+    margin: 40px 0; /* Marge supérieure et inférieure */
+}
+
+  
+  .promo-main-text {
+    font-size: 20px;
+    text-align: left; /* Aligne le texte à gauche */
+    margin-left: 20px;
+  }
+  
+  .promo-sub-text {
+    font-size: 20px;
+    text-align: left; /* Aligne le texte à gauche */
+    margin-left: 20px;
+  }
+  
+  ul.robot-parts-cta {
+    display: flex;
+    justify-content: space-around; /* Espace entre les éléments */
+    flex-wrap: wrap; /* Permet aux éléments de se répartir sur plusieurs lignes si nécessaire */
+    list-style-type: none; /* Retirer les puces de la liste */
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul.robot-parts-cta li {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  ul.robot-parts-cta img {
+    width: 200px; /* Fixe la largeur des images */
+    height: 200px; /* Fixe la hauteur des images */
+    object-fit: cover; /* Maintient le ratio des images tout en remplissant l'espace */
+    border: 2px solid #ddd; /* Bordure autour des images */
+    border-radius: 50%; /* Rend les images parfaitement rondes */
+  }
+  
+  ul.robot-parts-cta div {
+    margin-top: 10px;
+    font-size: 16px; /* Taille du texte sous l'image */
+    font-weight: bold;
+  }
+  
+  
+  .part {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .part img {
+    width: 180px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #888;
+  }
+  
+  .white-paper {
+    display: flex;
+    height: 100%;
+    margin: 0 25px;
+  }
+  
+  .white-paper img {
+    width: 75%; 
+    
+  }
+  
+  .white-paper .text {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    background-color: #4e4657;
+    text-align: center;
+    justify-content: space-between;
+  }
+  
+  .white-paper .header-text {
+    color: #9c93c2;
+    margin-top: 50px;
+    font-size: 30px;
+  }
+  
+  .white-paper .sub-text {
+    font-size: 20px;
+    color: #9c93c2;
+    margin-top: 10px;
+    padding: 0 15%;
+  }
+  
+  .white-paper .sub-text p {
+    margin: 0;
+  }
+  
+  .white-paper .large-text {
+    border-top: 2px solid#9c93c2;
+    border-bottom: 2px solid #9c93c2;
+    margin-top: -50px;
+    padding: 20px 0;
+    font-size: 35px;
+    color: #fff;
+  }
+  
+  .white-paper .learn-more {
+    background-color:#9c93c2;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+  }
+  .new-text-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    width: 90%; 
+    margin: 0 auto; 
+}
+
+
+.new-text-section h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.new-text-section p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+.footer {
+  background-color:#9c93c2; /* Couleur de fond */
+  padding: 20px; /* Espacement intérieur */
+  text-align: center; /* Centrer le texte */
+  font-size: 14px; /* Taille de police */
+  border-top: 1px solid #ddd; /* Ligne de séparation en haut */
+  margin-top: 20px; /* Espacement supérieur */
+}
+

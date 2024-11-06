@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="filters">
+      <a class="button" (click)="filter='Tartes'">Tartes</a>
+      <a class="button" (click)="filter='Cheese Cakes'">Cheese Cakes</a>
+      <a class="button" (click)="filter=''">Tous</a>
+    </div>
+  
+    <ul class="products">
+      <li class="product-item" *ngFor="let product of getFilteredProducts()">
+        <app-product-details [product]="product" (buy)="addToCart(product)"></app-product-details>
+      </li>
+    </ul>
+    <footer class="footer">
+      <p>Notre adresse est :</p>
+      <p>Cake's Shop - Rue de la pâtisserie 216, Tunis, Tunisie</p>
+      <p>2024 ENIT - All rights reserved</p>
+    </footer>
+  </div>
